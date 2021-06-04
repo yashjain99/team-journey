@@ -20,9 +20,9 @@ import javax.validation.constraints.*;
 import javax.validation.Valid;
 
 /**
- * Users
+ * User
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaJerseyServerCodegen", date = "2021-06-04T13:24:38.095Z[GMT]")public class Users   {
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaJerseyServerCodegen", date = "2021-06-04T13:25:37.333Z[GMT]")public class User   {
   @JsonProperty("id")
   private Integer id = null;
 
@@ -32,7 +32,7 @@ import javax.validation.Valid;
   @JsonProperty("profile_image")
   private String profileImage = null;
 
-  public Users id(Integer id) {
+  public User id(Integer id) {
     this.id = id;
     return this;
   }
@@ -52,7 +52,7 @@ import javax.validation.Valid;
     this.id = id;
   }
 
-  public Users name(String name) {
+  public User name(String name) {
     this.name = name;
     return this;
   }
@@ -72,7 +72,7 @@ import javax.validation.Valid;
     this.name = name;
   }
 
-  public Users profileImage(String profileImage) {
+  public User profileImage(String profileImage) {
     this.profileImage = profileImage;
     return this;
   }
@@ -101,10 +101,10 @@ import javax.validation.Valid;
     if (o == null || getClass() != o.getClass()) {
       return false;
     }
-    Users users = (Users) o;
-    return Objects.equals(this.id, users.id) &&
-        Objects.equals(this.name, users.name) &&
-        Objects.equals(this.profileImage, users.profileImage);
+    User user = (User) o;
+    return Objects.equals(this.id, user.id) &&
+        Objects.equals(this.name, user.name) &&
+        Objects.equals(this.profileImage, user.profileImage);
   }
 
   @Override
@@ -116,7 +116,7 @@ import javax.validation.Valid;
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("class Users {\n");
+    sb.append("class User {\n");
     
     sb.append("    id: ").append(toIndentedString(id)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");

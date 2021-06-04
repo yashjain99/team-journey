@@ -22,7 +22,7 @@ import java.io.InputStream;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.SecurityContext;
 import javax.validation.constraints.*;
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaJerseyServerCodegen", date = "2021-06-04T13:24:38.095Z[GMT]")public abstract class TeamApiService {
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaJerseyServerCodegen", date = "2021-06-04T13:25:37.333Z[GMT]")public abstract class TeamApiService {
     public abstract Response createTeam(Body body,SecurityContext securityContext) throws NotFoundException;
     public abstract Response deleteTeam(Integer id,SecurityContext securityContext) throws NotFoundException;
     public abstract Response listTeam(Integer orgId, String search,SecurityContext securityContext) throws NotFoundException;

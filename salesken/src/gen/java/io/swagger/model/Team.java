@@ -15,7 +15,7 @@ package io.swagger.model;
 import java.util.Objects;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
-import io.swagger.model.Users;
+import io.swagger.model.User;
 import io.swagger.v3.oas.annotations.media.Schema;
 import java.util.ArrayList;
 import java.util.List;
@@ -25,7 +25,7 @@ import javax.validation.Valid;
 /**
  * Team
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaJerseyServerCodegen", date = "2021-06-04T13:24:38.095Z[GMT]")public class Team   {
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaJerseyServerCodegen", date = "2021-06-04T13:25:37.333Z[GMT]")public class Team   {
   @JsonProperty("orgId")
   private Integer orgId = null;
 
@@ -42,7 +42,7 @@ import javax.validation.Valid;
   private Integer ownerId = null;
 
   @JsonProperty("members")
-  private List<Users> members = new ArrayList<Users>();
+  private List<User> members = new ArrayList<User>();
 
   public Team orgId(Integer orgId) {
     this.orgId = orgId;
@@ -144,12 +144,12 @@ import javax.validation.Valid;
     this.ownerId = ownerId;
   }
 
-  public Team members(List<Users> members) {
+  public Team members(List<User> members) {
     this.members = members;
     return this;
   }
 
-  public Team addMembersItem(Users membersItem) {
+  public Team addMembersItem(User membersItem) {
     this.members.add(membersItem);
     return this;
   }
@@ -162,11 +162,11 @@ import javax.validation.Valid;
   @Schema(required = true, description = "")
   @NotNull
   @Valid
-  public List<Users> getMembers() {
+  public List<User> getMembers() {
     return members;
   }
 
-  public void setMembers(List<Users> members) {
+  public void setMembers(List<User> members) {
     this.members = members;
   }
 
